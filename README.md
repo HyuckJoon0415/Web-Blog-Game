@@ -1,3 +1,3 @@
-<div align="center">
-  <strong>#12조</strong>
-</div>
+<h1 align="center">
+  12조
+</h1>
