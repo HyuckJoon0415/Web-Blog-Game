@@ -1,3 +1,3 @@
 <div align="center">
-  **12조**
+  12조
 </div>
