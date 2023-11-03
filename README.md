@@ -1,3 +1,3 @@
 <div align="center">
-  <strong>12조</strong>
+  <strong><font size=20>12조</font></strong>
 </div>
