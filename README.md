@@ -1,5 +1,5 @@
 # HTML기반 WEB Blog
-<p align="center"><image src=https://github.com/HyuckJoon0415/asdf/assets/145080176/04492097-ed35-4e4b-8d56-a89b641e2a7d width="50%" height="50%"></p>
+<p align="center"><image src=https://github.com/HyuckJoon0415/asdf/assets/145080176/04492097-ed35-4e4b-8d56-a89b641e2a7d width="40%" height="40%"></p>
 
 
 ## Abstract
