@@ -1,5 +1,5 @@
 # HTML기반 WEB Blog
-
+![logo_image](https://github.com/HyuckJoon0415/asdf/assets/145080176/04492097-ed35-4e4b-8d56-a89b641e2a7d)
 ## Abstract
 <ul>
   <li>HTML을 기반으로 한 웹 블로그를 생성하는 것을 목표로 한다. 이 웹 블로그는 사용자가 쉽게 글을 작성하고 공유할 수 있는 플랫폼을 제공하며, 추가로 간단한 게임 요소를 통합하여 사용자들에게 더욱 흥미로운 경험을 제공한다.
