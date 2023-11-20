@@ -142,7 +142,7 @@ input[id="menuIcon"]:checked + label + div {
 
 /*slider section*/
 .slideShow {
-    width: 300vw;
+    width: 500vw;
     height: 80vh;
     padding-top: 8%;
     transition: transform 0.5s;
