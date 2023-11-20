@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
 /*header section*/
 .headerSection {
@@ -9,7 +13,7 @@
     top: 0;
     width: 100vw;
     height: 15vh;
-
+    /* background-color: beige; */
     z-index: 5;
 }
 
@@ -21,6 +25,7 @@
     left: 40%;
     width: 200px;
     height: 100px;
+    z-index: 10;
 }
 /* end head section*/
 
@@ -36,6 +41,7 @@ input[id="menuIcon"] {
 
 input[id="menuIcon"] + label {
     display: block;
+    margin-top: 10px;
     width: 60px;
     height: 40px;
     position: relative;
@@ -141,17 +147,24 @@ input[id="menuIcon"]:checked + label + div {
 /* end menu section*/
 
 /*slider section*/
+.slideHead {
+    overflow: hidden;
+    margin-top: 15vh;
+}
+
 .slideShow {
     width: 500vw;
-    height: 80vh;
-    padding-top: 8%;
+    height: 85vh;
     transition: transform 0.5s;
 }
 
 .slides {
     width: 100vw;
-    height: 80vh;
+    height: 85vh;
     float: left;
+}
+.slides .in_logo_slide {
+    text-align: center;
 }
 
 .slides img {
@@ -164,6 +177,10 @@ input[id="menuIcon"]:checked + label + div {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.arrow {
+    position: flex;
 }
 
 .arrow span {
@@ -193,3 +210,7 @@ input[id="menuIcon"]:checked + label + div {
 }
 
 /* end slider section*/
+
+/* kwonphoto section */
+
+/* end kwonphoto section */
