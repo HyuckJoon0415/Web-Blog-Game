@@ -39,7 +39,7 @@ __개인 프로필 및 포트폴리오__
 </ul>
 
 ## Project Schedule
-혁준 - UI 설계 쭉  
+혁준 - UI 설계 쭉<br/>  
 준호, 정현 - 쭉 게임 개발
 
 ## Project ScreenShot
