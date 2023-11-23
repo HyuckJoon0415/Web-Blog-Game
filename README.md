@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=9B9898&height=300&section=header&text=KPL-nl-👋%20Welcome%20to%20KPL&fontColor=424141&fontSize=40&animation=fadeIn&fontAlignY=20&fontAlignY=60)
+![header](https://capsule-render.vercel.app/api?type=waving&color=9B9898&height=300&section=header&text=KPI-nl-👋%20Welcome%20to%20KPI&fontColor=424141&fontSize=40&animation=fadeIn&fontAlignY=20&fontAlignY=60)
 # HTML기반 WEB Blog
 <p align="center"><image src=https://github.com/HyuckJoon0415/asdf/assets/145080176/04492097-ed35-4e4b-8d56-a89b641e2a7d width="40%" height="40%"></p>
 <p align="center"><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FHyuckJoon0415%2Fasdf&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a></p>
