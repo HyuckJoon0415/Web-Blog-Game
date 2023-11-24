@@ -8,6 +8,9 @@
 
 ## Project ScreenShot
 <구현중인 flappy bird game></br>  
-<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a">
+<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a"></br>  
+<구현중인 웹페이지(이미지는 샘플입니다)></br>  
+<img width="1271" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/a033e9bc-f14f-4b0f-8c90-6b3c85ed3c1d">
+
 
 ## Individual Progress Status
