@@ -7,5 +7,7 @@
 <img width="956" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/514c26a9-6eca-4f3a-9fb2-3300bffbeb36">
 
 ## Project ScreenShot
+구현중인 flappy bird game</br>
+<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a">
 
 ## Individual Progress Status
