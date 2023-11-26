@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>25x25 Maze-hunting Game</title>
+    <script>
+      var map;
+      var nowX, nowY;
+      var startTime, endTime;
+
+      function generateRandomMaze(size) {
+        var maze = create2DArray(size, size, 1); // 1로 초기화하여 모든 공간을 벽으로 설정
+        var stack = [];
+        var currentCell = { x: 1, y: 1 }; // 시작점은 (1,1)로 설정
+
+        maze[currentCell.x][currentCell.y] = 0;
+        stack.push(currentCell);
+
+        while (stack.length > 0) {
+          var cell = stack.pop();
+          var neighbours = getUnvisitedNeighbours(cell, maze);
+
+          if (neighbours.length > 0) {
+            stack.push(cell); // 현재 셀을 스택에 다시 넣음
+
+            // 임의의 이웃을 선택하고 벽을 제거
+            var nextCell =
+              neighbours[Math.floor(Math.random() * neighbours.length)];
+            maze[nextCell.x][nextCell.y] = 0;
+
+            // 현재 셀과 다음 셀 사이의 벽을 제거
+            removeWallBetweenCells(cell, nextCell, maze);
+
+            stack.push(nextCell);
+          }
+        }
+
+        // 입구와 출구 생성
+
+        maze[1][24] = 2;
+        maze[size - 1][1] = 3; // 객체의 시작 위치 설정
+        nowX = size - 1;
+        nowY = 1;
+        return maze;
+      }
+      // 주어진 셀의 이웃 중 아직 방문하지 않은 셀들을 반환
+      function getUnvisitedNeighbours(cell, maze) {
+        var neighbours = [];
+        var directions = [
+          { x: -2, y: 0 }, // 위
+          { x: 2, y: 0 }, // 아래
+          { x: 0, y: -2 }, // 왼쪽
+          { x: 0, y: 2 }, // 오른쪽
+        ];
+
+        directions.forEach(function (dir) {
+          var nx = cell.x + dir.x;
+          var ny = cell.y + dir.y;
+
+          // 이웃이 경계 안에 있고 방문하지 않았다면 목록에 추가
+          if (
+            nx >= 0 &&
+            nx < maze.length &&
+            ny >= 0 &&
+            ny < maze[0].length &&
+            maze[nx][ny] === 1
+          ) {
+            neighbours.push({ x: nx, y: ny });
+          }
+        });
+
+        return neighbours;
+      }
+
+      // 두 셀 사이의 벽을 제거
+      function removeWallBetweenCells(cell1, cell2, maze) {
+        var x = (cell1.x + cell2.x) / 2;
+        var y = (cell1.y + cell2.y) / 2;
+
+        maze[x][y] = 0;
+      }
+
+      // 주어진 값으로 초기화된 2차원 배열을 생성
+      function create2DArray(width, height, initialValue) {
+        var array = new Array(height);
+        for (var i = 0; i < height; i++) {
+          array[i] = new Array(width).fill(initialValue);
+        }
+        return array;
+      }
+
+      function Board() {
+        var table = document.createElement("table");
+        for (var i = 0; i < 25; i++) {
+          var tr = document.createElement("tr");
+          for (var j = 0; j < 25; j++) {
+            var td = document.createElement("td");
+            td.id = "x" + i + "y" + j;
+            tr.appendChild(td);
+          }
+          table.appendChild(tr);
+        }
+        document.body.appendChild(table); // body의 끝에 테이블을 추가
+      }
+
+      function ChangeColor(x, y, color) {
+        document.getElementById("x" + x + "y" + y).style.backgroundColor =
+          color;
+      }
+
+      function drawmaze() {
+        for (var i = 0; i < 25; i++) {
+          for (var j = 0; j < 25; j++) {
+            if (map[i][j] == 1) {
+              ChangeColor(i, j, "#000000"); //벽돌
+            } else if (map[i][j] == 2) {
+              ChangeColor(i, j, "#980000"); //출구
+            } else if (map[i][j] == 3) {
+              // 객체
+              ChangeColor(i, j, "#F5F5DC");
+              document.getElementById("x" + i + "y" + j).style.textAlign =
+                "center";
+              document.getElementById("x" + i + "y" + j).style.padding = "1px";
+              document.getElementById("x" + i + "y" + j).innerHTML =
+                "<img src='object.jpg' style='width: 30px; height: 30px; display: block;'>";
+            } else if (map[i][j] == 0) {
+              // 길
+              ChangeColor(i, j, "white");
+              document.getElementById("x" + i + "y" + j).innerHTML =
+                "<img src=''>";
+            }
+          }
+        }
+      }
+
+      // 게임 시작 시간을 기록하는 함수
+      function startGame() {
+        // 기존 미로가 있으면 삭제합니다.
+        var existingTable = document.querySelector("table");
+        if (existingTable) {
+          existingTable.remove();
+        }
+        map = generateRandomMaze(25);
+        Board();
+        drawmaze();
+        startTime = new Date();
+        // 웹 페이지 로드 시, 최단 기록을 가져와서 표시합니다.
+        var bestTime = parseFloat(localStorage.getItem("bestTime"));
+        if (bestTime) {
+          document.getElementById("bestTimeDisplay").textContent =
+            "최단 기록: " + bestTime + "초";
+        }
+      }
+
+      // 게임 종료 시간을 기록하고 최단 시간을 업데이트하는 함수
+      function endGame() {
+        endTime = new Date();
+        var timeTaken = (endTime - startTime) / 1000;
+        alert("축하합니다! 클리어 시간: " + timeTaken + "초");
+
+        var bestTime = parseFloat(localStorage.getItem("bestTime"));
+        var newRecord = false;
+
+        if (!bestTime || timeTaken < bestTime) {
+          localStorage.setItem("bestTime", timeTaken);
+          newRecord = true;
+          alert("새로운 최단 기록입니다!");
+          // 최단 기록을 표시하는 div 요소를 업데이트합니다.
+          document.getElementById("bestTimeDisplay").textContent =
+            "최단 기록: " + timeTaken + "초";
+        }
+
+        // 게임 재시작 여부를 묻는 confirm 대화 상자를 표시합니다.
+        var restart = confirm("게임을 다시 시작하시겠습니까?");
+        if (restart) {
+          startGame(); // 게임을 다시 시작합니다.
+        } else {
+          if (newRecord) {
+            alert("축하합니다! 새로운 기록을 달성했습니다!");
+          }
+          alert("게임을 종료합니다. 이용해 주셔서 감사합니다!"); // 게임을 종료합니다.
+        }
+      }
+
+      function inputFunction(input) {
+        switch (input) {
+          case 37: // 왼쪽 (Left arrow)
+            if (nowY > 0 && map[nowX][nowY - 1] !== 1) {
+              moveobject(-1, 0);
+            }
+            break;
+          case 38: // 위 (Up arrow)
+            if (nowX > 0 && map[nowX - 1][nowY] !== 1) {
+              moveobject(0, -1);
+            }
+            break;
+          case 39: // 오른쪽 (Right arrow)
+            if (nowY < 25 && map[nowX][nowY + 1] !== 1) {
+              moveobject(1, 0);
+            }
+            break;
+          case 40: // 아래 (Down arrow)
+            if (nowX < 25 && map[nowX + 1][nowY] !== 1) {
+              moveobject(0, 1);
+            }
+            break;
+        }
+      }
+
+      function moveobject(dx, dy) {
+        // 이전 위치를 비웁니다.
+        map[nowX][nowY] = 0;
+        // 새 위치 계산
+        var newX = nowX + dy;
+        var newY = nowY + dx;
+        // 경계와 벽 검사
+        if (
+          newX >= 0 &&
+          newX < 25 &&
+          newY >= 0 &&
+          newY < 25 &&
+          map[newX][newY] !== 1
+        ) {
+          nowX = newX;
+          nowY = newY;
+          if (map[nowX][nowY] === 2) {
+            endGame(); // 출구에 도달했을 때 endGame 호출
+          }
+          // 꼬부기를 새 위치에 배치합니다.
+          map[nowX][nowY] = 3;
+          drawmaze();
+        }
+      }
+
+      window.onload = startGame;
+    </script>
+    <style>
+      table {
+        margin: auto;
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid black;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body onkeydown="inputFunction(event.keyCode);">
+    <div id="bestTimeDisplay">최단 기록: 없음</div>
+  </body>
+</html>
