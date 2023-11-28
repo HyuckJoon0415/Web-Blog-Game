@@ -21,7 +21,7 @@
 
 
 ## Individual Progress Status
-# 2020202059 임정현
+### 2020202059 임정현
 - DFS알고리즘을 이용하여 HTML기반에서 JavaScript코드로 랜덤 미로 생성 완료. [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/bc5428c60ad9d9cd109e0248674e52906d2646f1)
 - Maze-hunting게임에 들어갈 이미지 포토샵 및 업로드 완료. [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/bc5428c60ad9d9cd109e0248674e52906d2646f1)
 - 방향키를 이용하여 Maze-hunting게임을 진행하도록 구현 완료. [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/bc5428c60ad9d9cd109e0248674e52906d2646f1)
