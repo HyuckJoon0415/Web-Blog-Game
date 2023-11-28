@@ -8,7 +8,9 @@
 
 ## Project ScreenShot
 <구현중인 flappy bird game></br>  
-<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a"></br>  
+<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a"></br>
+<구현완료 25x25 Maze-hunting game></br>
+<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a"></br>
 <구현중인 웹페이지(슬라이드 이미지는 샘플입니다)></br>  
 ![image](https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/d72aa1ba-7caf-4472-bd12-6d7cbb5c3d54)
 
