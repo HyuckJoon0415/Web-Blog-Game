@@ -14,6 +14,7 @@
 <img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/blob/jeonghyeon_br/maze-hunting.png?raw=true"></br>
 <25x25 Maze-hunting game video></br>
 <br>https://www.youtube.com/watch?v=QpOIvg_AHZ0</br>
+<구현완료 25x25 Maze-hunting game></br>
 
 <구현중인 웹페이지(슬라이드 이미지는 샘플입니다)></br>  
 ![image](https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/d72aa1ba-7caf-4472-bd12-6d7cbb5c3d54)
