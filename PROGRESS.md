@@ -7,16 +7,19 @@
 <img width="956" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/514c26a9-6eca-4f3a-9fb2-3300bffbeb36">
 
 ## Project ScreenShot
-<구현중인 flappy bird game></br>  
-<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a"></br>
+<div align="center">
+    
+|Game1|Game2|
+|:------:|:---:|
+|<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a"></br>|<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/blob/jeonghyeon_br/maze-hunting.png?raw=true">|
+|Flappy Bird Game|<a href="https://www.youtube.com/watch?v=QpOIvg_AHZ0">25x25 Maze-hunting game</a>|
+</div>
 
-<구현완료 25x25 Maze-hunting game></br>
-<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/blob/jeonghyeon_br/maze-hunting.png?raw=true"></br>
-<25x25 Maze-hunting game video></br>
-<br>https://www.youtube.com/watch?v=QpOIvg_AHZ0</br>
 
-<구현중인 웹페이지(슬라이드 이미지는 샘플입니다)></br>  
-![image](https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/d72aa1ba-7caf-4472-bd12-6d7cbb5c3d54)
+|Web Page|
+|:--:|
+|![image](https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/d72aa1ba-7caf-4472-bd12-6d7cbb5c3d54)|
+|웹페이지(슬라이드 이미지는 샘플입니다)|
 
 
 
