@@ -14,7 +14,7 @@
 |<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/assets/145082589/3500ce79-d0ac-4824-8c9b-d63375aadb8a"></br>|<img width="449" alt="image" src="https://github.com/HyuckJoon0415/Web-Blog-Game/blob/jeonghyeon_br/maze-hunting.png?raw=true">|
 |Flappy Bird Game|<a href="https://www.youtube.com/watch?v=QpOIvg_AHZ0">25x25 Maze-hunting game</a>|
 </div>
-
+<br>
 
 |Web Page|
 |:--:|
