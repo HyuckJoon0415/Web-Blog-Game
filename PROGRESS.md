@@ -21,6 +21,15 @@
 
 
 ## Individual Progress Status
+### 2019202027 권혁준
+- 홈페이지 슬라이드 구현 및 타이틀 로고 변경 [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/96a9b353a2e8b5b33de88daf8ea7f694649f2f50)
+- 페이지의 header와 footer 구현 [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/96a9b353a2e8b5b33de88daf8ea7f694649f2f50)
+- 사이드 메뉴바 제작 [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/96a9b353a2e8b5b33de88daf8ea7f694649f2f50)
+- 사이드 메뉴바의 각 메뉴에 대한 디자인 설계 및 페이지 제작 [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/96a9b353a2e8b5b33de88daf8ea7f694649f2f50)
+- 페이지 내부의 링크 구현 및 호버 기능 장착 [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/96a9b353a2e8b5b33de88daf8ea7f694649f2f50)
+
+### 2020 박준호
+
 ### 2020202059 임정현
 - DFS알고리즘을 이용하여 HTML기반에서 JavaScript코드로 랜덤 미로 생성 완료. [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/bc5428c60ad9d9cd109e0248674e52906d2646f1)
 - Maze-hunting게임에 들어갈 이미지 포토샵 및 업로드 완료. [Commit Link](https://github.com/HyuckJoon0415/Web-Blog-Game/commit/bc5428c60ad9d9cd109e0248674e52906d2646f1)
