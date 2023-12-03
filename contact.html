@@ -14,6 +14,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/contact.css" />
         <title>Playground For Coders</title>
     </head>
 
@@ -74,6 +75,28 @@
         <!-- end header section-->
 
         <p>Contact</p>
+        <!--contact-->
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form
+                action="lmaodct1999@gmail.com"
+                method="post"
+                enctype="text/plain"
+            >
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+        </br>
+                <input class="sendBt" type="submit" value="Send" />
+            </form>
+        </section>
+
+        <!--end contact-->
 
         <!-- footer section-->
         <footer class="site-footer">
