@@ -75,28 +75,28 @@
 
         var score = 0;
         var bestScore = 0;
-
+        // Function to get a random integer within a range
         function getRandomInt(min, max) {
             return Math.floor(Math.random() * (max - min)) + min;
         }
-
+        // Main game loop
         function loop() {
             if (isGameOver) {
                 return;
             }
 
             requestAnimationFrame(loop);
-
+            // Control the speed of the snake
             if (++count < 4) {
                 return;
             }
 
             count = 0;
             context.clearRect(0, 0, canvas.width, canvas.height);
-
+            // Move the snake based on its direction
             snake.x += snake.dx;
             snake.y += snake.dy;
-
+            // Wrap the snake around the canvas if it goes out of bounds
             if (snake.x < 0) {
                 snake.x = canvas.width - grid;
             } else if (snake.x >= canvas.width) {
@@ -109,49 +109,51 @@
                 snake.y = 0;
             }
 
+            // Update the snake's cells
             snake.cells.unshift({ x: snake.x, y: snake.y });
 
             if (snake.cells.length > snake.maxCells) {
                 snake.cells.pop();
             }
-
+            // Draw the apple
             context.fillStyle = 'red';
             context.fillRect(apple.x, apple.y, grid - 1, grid - 1);
-
+            // Draw the snake
             context.fillStyle = 'green';
             snake.cells.forEach(function (cell, index) {
                 context.fillRect(cell.x, cell.y, grid - 1, grid - 1);
-
+                // Check if the snake has eaten the apple
                 if (cell.x === apple.x && cell.y === apple.y) {
                     snake.maxCells++;
+                    // Move the apple to a new random position
                     apple.x = getRandomInt(0, 25) * grid;
                     apple.y = getRandomInt(0, 25) * grid;
-                    // 점수 증가 및 표시
+                    // Increase the score and update the display
                     score++;
                     document.getElementById('score').innerHTML = 'Score: ' + score;
                 }
-
+                // Check for collisions with the snake's own body
                 for (var i = index + 1; i < snake.cells.length; i++) {
                     if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
-                        // 게임 오버 처리
+                        // Game over condition
                         gameOver();
                     }
                 }
             });
         }
-
+        // Function to handle game over
         function gameOver() {
             isGameOver = true;
 
-            // 게임 오버 시 최고 점수 갱신 및 표시
+            // If game over, update the best score and display
             bestScore = Math.max(bestScore, score);
             document.getElementById('finalScore').innerText = score;
             document.getElementById('bestScore').innerText = bestScore;
 
-            // 게임 오버 화면 표시
+            // Display the game over screen
             document.getElementById('gameOver').style.display = 'block';
 
-            // 뱀 초기화
+            // Initialize the snake for a new game
             snake.x = 160;
             snake.y = 160;
             snake.cells = [];
@@ -159,31 +161,31 @@
             snake.dx = grid;
             snake.dy = 0;
 
-            // 사과 초기화
+            // Initialize the apple for a new game
             apple.x = getRandomInt(0, 25) * grid;
             apple.y = getRandomInt(0, 25) * grid;
 
-            // 게임 오버 화면에서 다시 시작하기 위한 이벤트 리스너 추가
+            // Add event listener for restarting game
             document.addEventListener('keydown', restartGame);
         }
 
         function restartGame(e) {
-            // 스페이스바를 누르면 게임 재시작
+            // If spacebar is pressed, restart the game
             if (isGameOver && e.which === 32) {
                 isGameOver = false;
 
-                // 게임 오버 화면 숨기고 이벤트 리스너 제거
+                // Hide the game over screen and remove the event listener
                 document.getElementById('gameOver').style.display = 'none';
                 document.removeEventListener('keydown', restartGame);
 
-                // 초기 속도로 다시 시작
+                // Restart the game with the initial speed
                 count = 0;
                 score = 0;
                 document.getElementById('score').innerHTML = 'Score: 0';
                 requestAnimationFrame(loop);
             }
         }
-
+        // Event listener for arrow keys to control the snake
         document.addEventListener('keydown', function (e) {
             if (isGameOver) {
                 return;
@@ -203,7 +205,7 @@
                 snake.dx = 0;
             }
         });
-
+        // Start the game loop
         requestAnimationFrame(loop);
     </script>
 </body>
