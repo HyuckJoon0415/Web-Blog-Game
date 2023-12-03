@@ -1,0 +1,92 @@
+/* top of the gallery section */
+.topOfTheG {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 3%;
+    /* border-color: black;
+    border-style: solid; */
+}
+
+.name {
+    color: black;
+    font-size: 20px;
+}
+/* end top of the gallery section */
+
+/* gallery section */
+
+.galleryContainer {
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border-color: black;
+    border-style: solid; */
+}
+
+.row-cols-2 .col {
+    width: 50%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    /* border: 1px solid #ddd; */
+}
+
+.row-cols-2 .col img {
+    width: 80%;
+    height: 500px;
+    display: inline-block;
+    max-width: 100%;
+}
+.row-cols-2 .col .coding_img_text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(219, 216, 216);
+    font-size: 50px;
+    font-style: italic;
+}
+.row-cols-2 .col .instagram_img_text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(219, 216, 216);
+    font-size: 50px;
+    font-style: italic;
+}
+
+/* coding image, instagram image hover section*/
+
+.row-cols-2 .col .coding_img_text,
+.row-cols-2 .col .instagram_img_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(219, 216, 216);
+    font-size: 50px;
+    font-style: italic;
+    transition: transform 0.3s ease-in-out;
+}
+.row-cols-2 .col:hover .coding_img_text,
+.row-cols-2 .col:hover .instagram_img_text {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.row-cols-2 .col img {
+    width: 80%;
+    height: 500px;
+    display: inline-block;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.row-cols-2 .col:hover img {
+    transform: scale(1.1);
+}
+/* end coding image, instagram image hover section*/
+/* end gallery section */
