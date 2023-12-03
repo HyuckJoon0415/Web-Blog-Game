@@ -1,0 +1,50 @@
+/* Add your custom styles for the contact section here */
+
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+.contact-section form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the form content */
+}
+
+.contact-section form label {
+    font-weight: bold;
+    color: #343a40;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.contact-section form .form-control {
+    margin: 0 auto; /* Center align the text input */
+    display: block;
+    width: 80%; /* Set the width of the input field */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-section form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Center align the button */
+}
+
+.contact-section form button:hover {
+    background-color: #0056b3;
+}
