@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* ?òÑ????†Å?ù∏ ?è∞?ä∏ ?Ñ§?†ï */
 }
 body {
     overflow-y: scroll;
@@ -16,7 +18,9 @@ body {
     position: absolute;
     top: 0;
     width: 100vw;
-    height: 15vh;
+
+    height: 10vh;
+
     border-bottom-color: black;
     background-color: #26272b;
     z-index: 5;
@@ -24,13 +28,15 @@ body {
 
 .logo_txt {
     position: absolute;
-    padding-top: 1%;
+
+    padding-top: 0.5%;
     padding-left: 5px;
     padding-bottom: 0.5%;
-    left: 5%;
+    left: 3%;
     z-index: 10;
     font-family: myLogoTxt;
-    font-size: 50px;
+    font-size: 45px;
+
     color: #8c93b8;
 }
 
@@ -48,8 +54,8 @@ body {
 
 /* menu section */
 .menuBt {
-    padding-left: 90vw;
-    padding-top: 3vh;
+    padding-left: 92vw;
+    padding-top: 1vh;
 }
 
 input[id="menuIcon"] {
@@ -105,12 +111,16 @@ input[id="menuIcon"]:checked + label span:nth-child(3) {
 
 .sideBar {
     float: right;
-    width: 400px;
+
+    width: 250px;
+
     height: 100%;
     background-color: #404148;
     position: fixed;
     top: 0;
-    right: -400px;
+
+    right: -250px;
+
     z-index: 1;
     transition: all 0.35s;
     display: flex;
@@ -123,7 +133,7 @@ input[id="menuIcon"]:checked + label + div {
 
 #menuDeep {
     list-style-type: none;
-    padding-top: 30%;
+    padding-top: 35%;
 }
 
 #menuDeep a {
@@ -134,7 +144,7 @@ input[id="menuIcon"]:checked + label + div {
 #menuDeep li {
     padding: 15px;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     border-bottom: 1px solid #ccc;
     transition: background-color 0.3s;
 }
@@ -166,7 +176,9 @@ input[id="menuIcon"]:checked + label + div {
 /*slider section*/
 .slideHead {
     overflow: hidden;
-    margin-top: 15vh;
+    margin-top: 0vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .slideShow {
@@ -205,17 +217,18 @@ input[id="menuIcon"]:checked + label + div {
     text-align: center;
     cursor: pointer;
     font-size: 3em;
-    color: black;
-    background-color: red;
+    color: rgb(27, 27, 27);
+    background-color: transparent;
     border-radius: 50%;
-    top: 50%;
+    top: 42.5%;
     padding: 5px 30px;
-
-    border-width: 3px;
+    border: 3px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .arrow span:hover {
-    background-color: #f6f6f6;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .nextBt {
@@ -247,7 +260,7 @@ input[id="menuIcon"]:checked + label + div {
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 10px;
     letter-spacing: 2px;
 }
 .site-footer a {

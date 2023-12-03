@@ -1,19 +1,24 @@
+![header](https://capsule-render.vercel.app/api?type=waving&color=9B9898&height=300&section=header&text=KPI-nl-👋%20Welcome%20to%20KPI&fontColor=424141&fontSize=40&animation=fadeIn&fontAlignY=20&fontAlignY=60)
 # HTML기반 WEB Blog
 <p align="center"><image src=https://github.com/HyuckJoon0415/asdf/assets/145080176/04492097-ed35-4e4b-8d56-a89b641e2a7d width="40%" height="40%"></p>
 <p align="center"><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FHyuckJoon0415%2Fasdf&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a></p>
 
 ## Abstract
+
+HTML을 기반으로 한 웹 블로그를 생성하는 것을 목표로 한다. 이 웹 블로그는 사용자가 쉽게 글을 작성하고 공유할 수 있는 플랫폼을 제공하며, 추가로 간단한 게임 요소를 통합하여 사용자들에게 더욱 흥미로운 경험을 제공한다.
+또한, 사용자의 정보를 관리하여 게임 이용자 및 방문자의 정보를 블로그에 표시할 수 있고, 개인화된 경험을 제공한다.
+
+__HTML 기반 블로그__
+        
 <ul>
-  <li>HTML을 기반으로 한 웹 블로그를 생성하는 것을 목표로 한다. 이 웹 블로그는 사용자가 쉽게 글을 작성하고 공유할 수 있는 플랫폼을 제공하며, 추가로 간단한 게임 요소를 통합하여 사용자들에게 더욱 흥미로운 경험을 제공한다.
-또한, 사용자의 정보를 관리하여 게임 이용자 및 방문자의 정보를 블로그에 표시할 수 있고, 개인화된 경험을 제공한다.</li>
-  <br>
-  <li>HTML 기반 블로그: 사용자는 웹 페이지를 통해 글을 작성, 수정, 삭제하고, 다른 사용자와 공유할 수 있다.</li>
-  <br>
-  <li>게임 요소: 웹사이트는 간단한 게임들을 통합하여 블로그 방문자가 쉽게 즐길 수 있는 게임 환경을 제공한다. 또한 이 게임은 블로그와 통합되어 사용자의 게임 성과를 블로그에 남길 수 있다.</li>
-  <br>
-  <li>작성자 정보 관리: 사용자는 자신의 프로필 정보를 설정하고 블로그 게시물에 작성자 정보를 표시할 수 있다. 이것은 블로그의 신뢰성을 높이고 사용자 간 상호 작용을 촉진한다.</li>
+  <li>사용자는 웹 페이지를 통해 글을 작성, 수정, 삭제하고, 다른 사용자와 공유할 수 있다.</li>    
 </ul>
 
+__게임 요소__
+<ul><li>웹사이트는 간단한 게임들을 통합하여 블로그 방문자가 쉽게 즐길 수 있는 게임 환경을 제공한다. 또한 이 게임은 블로그와 통합되어 사용자의 게임 성과를 블로그에 남길 수 있다.</li></ul>
+
+__작성자 정보 관리__
+<ul><li>사용자는 자신의 프로필 정보를 설정하고 블로그 게시물에 작성자 정보를 표시할 수 있다. 이것은 블로그의 신뢰성을 높이고 사용자 간 상호 작용을 촉진한다.</li></ul>
 
 ## Project objectives
 블로그를 생성하여 이를 관리할 수 있는 웹 사이트를 개발한다.
