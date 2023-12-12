@@ -1,17 +1,18 @@
 /* top of the gallery section */
 .topOfTheG {
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 3%;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
     /* border-color: black;
     border-style: solid; */
 }
 
 .name {
     color: black;
-    font-size: 20px;
+    font-size: 50px;
 }
+
 /* end top of the gallery section */
 
 /* gallery section */
@@ -40,6 +41,7 @@
     display: inline-block;
     max-width: 100%;
 }
+
 .row-cols-2 .col .coding_img_text {
     position: absolute;
     top: 10%;
@@ -49,6 +51,7 @@
     font-size: 50px;
     font-style: italic;
 }
+
 .row-cols-2 .col .instagram_img_text {
     position: absolute;
     top: 10%;
@@ -72,6 +75,7 @@
     font-style: italic;
     transition: transform 0.3s ease-in-out;
 }
+
 .row-cols-2 .col:hover .coding_img_text,
 .row-cols-2 .col:hover .instagram_img_text {
     transform: translate(-50%, -50%) scale(1.1);
@@ -88,5 +92,6 @@
 .row-cols-2 .col:hover img {
     transform: scale(1.1);
 }
+
 /* end coding image, instagram image hover section*/
 /* end gallery section */
