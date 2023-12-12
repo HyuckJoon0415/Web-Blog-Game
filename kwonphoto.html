@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            crossorigin="anonymous"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/KwonPst.css" />
-        <title>Playground For Coders</title>
-    </head>
 
-    <body>
-        <!--header section-->
-        <header class="headerSection">
-            <!--logo-->
-            <a class="navbar-brand" href="index.html"
-                ><p class="logo_txt">KPI</p></a
-            >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/KwonPst.css" />
+    <title>Playground For Coders</title>
+</head>
 
-            <!-- <div class="logo">
+<body>
+    <!--header section-->
+    <header class="headerSection">
+        <!--logo-->
+        <a class="navbar-brand" href="index.html">
+            <p class="logo_txt">KPI</p>
+        </a>
+
+        <!-- <div class="logo">
                 <a class="navIndex" href="index.html">
                     <span
                         ><img src="images/logo.png" class="navIndexImg"
@@ -34,161 +29,146 @@
                 </a>
             </div> -->
 
-            <!--end logo-->
+        <!--end logo-->
 
-            <!--menu button-->
-            <div class="menuBt">
-                <input type="checkbox" id="menuIcon" />
-                <label for="menuIcon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                <div class="sideBar">
-                    <ul id="menuDeep">
-                        <a href="game.html">
-                            <li>Game</li>
-                        </a>
-                        <a href="#">
-                            <li>
-                                Gallery
-                                <ul>
-                                    <a href="Kwonphoto.html">
-                                        <li>Kwon</li>
-                                    </a>
-                                    <a href="Parkphoto.html">
-                                        <li>Park</li>
-                                    </a>
-                                    <a href="Imphoto.html">
-                                        <li>Im</li>
-                                    </a>
-                                </ul>
-                            </li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact</li>
-                        </a>
+        <!--menu button-->
+        <div class="menuBt">
+            <input type="checkbox" id="menuIcon" />
+            <label for="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="sideBar">
+                <ul id="menuDeep">
+                    <a href="game.html">
+                        <li>Game</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Gallery
+                            <ul>
+                                <a href="Kwonphoto.html">
+                                    <li>Kwon</li>
+                                </a>
+                                <a href="Parkphoto.html">
+                                    <li>Park</li>
+                                </a>
+                                <a href="Imphoto.html">
+                                    <li>Im</li>
+                                </a>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <!--end menu button-->
+    </header>
+    <!-- end header section-->
+
+    <!-- top of the gallery section -->
+    <div class="topOfTheG">
+        <p class="name">Kwon</p>
+    </div>
+    <!-- end top of the gallery section -->
+
+    <!-- gallery section -->
+    <div class="galleryContainer">
+        <div class="row row-cols-2">
+            <div class="col">
+                <a href="https://github.com/HyuckJoon0415" target="_blank">
+                    <img src="images/coding.png" alt="coding" />
+                    <h1 class="coding_img_text">Coding</h1>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.instagram.com/im_Kwonzz" target="_blank">
+                    <img src="images/instagram.png" alt="instagram" />
+                    <h1 class="instagram_img_text">Instagram</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end gallery section -->
+
+    <!-- footer section-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">This is a webpage for the open source project in Team 12. In this web page,
+                        we developed games and posted our goals in photos with the aim of getting interested in coding,
+                        and growing as developers without losing our goals.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="game.html">Game</a>
+                        </li>
+                        <li>Gallery</li>
+                        <li>
+                            <a href="Kwonphoto.html">-Kwon</a>
+                        </li>
+                        <li>
+                            <a href="Parkphoto.html">-Park</a>
+                        </li>
+                        <li>
+                            <a href="Imphoto.html">-Im</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Developer</h6>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://github.com/HyuckJoon0415" target="_blank">Kwon</a>
+                            <p>lmaodct1999@gmail.com</p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/JunhoPark1234" target="_blank">Park</a>
+                            <p>jjun01004@naver.com</p>
+                        </li>
+                        <li>
+                            <a href="https://github.com/JeonghyeonIm" target="_blank">Im</a>
+                            <p>yimjh544@naver.com</p>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <!--end menu button-->
-        </header>
-        <!-- end header section-->
-
-        <!-- top of the gallery section -->
-        <div class="topOfTheG">
-            <p class="name">Kwon</p>
+            <hr />
         </div>
-        <!-- end top of the gallery section -->
 
-        <!-- gallery section -->
-        <div class="galleryContainer">
-            <div class="row row-cols-2">
-                <div class="col">
-                    <a href="https://github.com/HyuckJoon0415" target="_blank">
-                        <img src="images/coding.png" alt="coding" />
-                        <h1 class="coding_img_text">Coding</h1>
-                    </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">
+                        Copyright &copy; 2023.KPI. All rights reserved.
+                    </p>
                 </div>
-                <div class="col">
-                    <a
-                        href="https://www.instagram.com/im_Kwonzz"
-                        target="_blank"
-                    >
-                        <img src="images/instagram.png" alt="instagram" />
-                        <h1 class="instagram_img_text">Instagram</h1>
-                    </a>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li>
+                            <a class="github" href="https://github.com/HyuckJoon0415/Web-Blog-Game"><i
+                                    class="bi bi-github"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- end gallery section -->
+    </footer>
+    <!-- end footer section-->
+</body>
 
-        <!-- footer section-->
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h6>About</h6>
-                        <p class="text-justify">Hello~~</p>
-                    </div>
-
-                    <div class="col-xs-6 col-md-3">
-                        <h6>Categories</h6>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="game.html">Game</a>
-                            </li>
-                            <li>Gallery</li>
-                            <li>
-                                <a href="Kwonphoto.html">-Kwon</a>
-                            </li>
-                            <li>
-                                <a href="Parkphoto.html">-Park</a>
-                            </li>
-                            <li>
-                                <a href="Imphoto.html">-Im</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-6 col-md-3">
-                        <h6>Developer</h6>
-                        <ul class="footer-links">
-                            <li>
-                                <a
-                                    href="https://github.com/HyuckJoon0415"
-                                    target="_blank"
-                                    >Kwon</a
-                                >
-                                <p>lmaodct1999@gmail.com</p>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/JunhoPark1234"
-                                    target="_blank"
-                                    >Park</a
-                                >
-                                <p>jjun01004@naver.com</p>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://github.com/JeonghyeonIm"
-                                    target="_blank"
-                                    >Im</a
-                                >
-                                <p>yimjh544@naver.com</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <hr />
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">
-                            Copyright &copy; 2023.KPI. All rights reserved.
-                        </p>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <ul class="social-icons">
-                            <li>
-                                <a
-                                    class="github"
-                                    href="https://github.com/HyuckJoon0415/Web-Blog-Game"
-                                    ><i class="bi bi-github"></i
-                                ></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- end footer section-->
-    </body>
 </html>
