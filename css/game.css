@@ -94,8 +94,8 @@
 }
 
 .row-cols-3 .col img {
-    width: 80%;
-    height: 500px;
+    width: 100vw;
+    height: 25vw;
     display: inline-block;
     max-width: 100%;
     transition: transform 0.3s ease-in-out;
