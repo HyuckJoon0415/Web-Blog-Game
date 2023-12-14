@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* ?òÑ????†Å?ù∏ ?è∞?ä∏ ?Ñ§?†ï */
+    font-family: Arial, sans-serif; /* ?ÔøΩÔøΩ????ÔøΩÔøΩ?ÔøΩÔøΩ ?ÔøΩÔøΩ?ÔøΩÔøΩ ?ÔøΩÔøΩ?ÔøΩÔøΩ */
 }
 body {
     overflow-y: scroll;
@@ -176,12 +176,13 @@ input[id="menuIcon"]:checked + label + div {
 /*slider section*/
 .slideHead {
     overflow: hidden;
-    margin-top: 0vh;
+    margin-top: 4vw;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
 .slideShow {
+    background-color: white;
     width: 500vw;
     height: 85vh;
     transition: transform 0.5s;
@@ -197,7 +198,8 @@ input[id="menuIcon"]:checked + label + div {
 }
 
 .slides img {
-    width: 100%;
+    padding-left: 20vw;
+    width: 60%;
     height: 100%;
 }
 
@@ -217,18 +219,18 @@ input[id="menuIcon"]:checked + label + div {
     text-align: center;
     cursor: pointer;
     font-size: 3em;
-    color: rgb(27, 27, 27);
+    color: rgb(8, 8, 8);
     background-color: transparent;
     border-radius: 50%;
-    top: 42.5%;
+    top: 47%;
     padding: 5px 30px;
     border: 3px solid transparent;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .arrow span:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(78, 76, 76, 0.5);
+    border-color: rgba(78, 76, 76, 0.5);
 }
 
 .nextBt {
