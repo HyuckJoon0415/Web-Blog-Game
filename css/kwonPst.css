@@ -93,5 +93,49 @@
     transform: scale(1.1);
 }
 
+.gallery {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 2%;
+    /* border-color: black;
+    border-style: solid; */
+}
+
+.row-cols-3 .col {
+    width: 33%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    /* border: 1px solid #ddd; */
+}
+
+.row-cols-3 .col img {
+    width: 24vw;
+    height: 24vw;
+    display: inline-block;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.row-cols-3 .col video {
+    width: 24vw;
+    height: 24vw;
+    display: inline-block;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.row-cols-3 .col .gallery_img_text {
+    position: relative;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(10, 10, 10);
+    font-size: 2vw;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+
 /* end coding image, instagram image hover section*/
 /* end gallery section */
